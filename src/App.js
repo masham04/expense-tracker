@@ -1,25 +1,23 @@
 import React from 'react';
 import './App.css';
-import {Header} from './components/Header';
-import {Balance} from './components/Balance';
-import {IncomeExpense} from './components/IncomeExpense';
-import {History} from './components/History';
-import {AddTransaction} from './components/AddTransaction';
+import {Header} from './Components/Header';
+import {Balance} from './Components/Balance';
+import {IncomeExpence} from './Components/IncomeExpence';
+import {History} from './Components/History';
+import {AddTransaction} from './Components/AddTransaction';
 
-import { GlobalProvider } from './context/globalstate';
+import {Globalprovider} from './Context/Globalstate'
 
 function App() {
-  return (
-    <GlobalProvider>
-      <Header />
-      <div className='container'>
+  
+  return(
+    <Globalprovider>
+        <Header />
         <Balance />
-        <IncomeExpense/>
-        <History/>
+        <IncomeExpence />
+        <History />
         <AddTransaction />
-      </div>
-    </GlobalProvider>
-  );
+    </Globalprovider>
+  )
 }
-
 export default App;

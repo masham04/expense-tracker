@@ -1,107 +1,58 @@
-@import url('https://fonts.google.com/specimen/Nunito?category=Sans+Serif');
 body{
-    background: linear-gradient(to right,#b7e66b,#70b349);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
+  background: linear-gradient(to right,red,black);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
-h1{
-    text-shadow: 2px 2px 5px rgb(85, 96, 192);
+.inc-exp{
+  display: flex;
+  justify-content: space-between;
 }
-h3{
-    margin: 40px 0 10px;
-}
-h4{
-    text-transform: uppercase;
-}
-.container{
-    width: 350px;
-    margin-bottom: 0px;
-}
-.inc-exp-container{
-         display: flex;
-         justify-content: space-between;
-         background-color: rgb(235, 227, 226);
-         
-         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-         height: 100px;
-}
-.inc-exp-container > div {
-    flex: 1;
-    text-align: center;
-  }
-#money-plus{
-    color: rgb(31, 145, 31);
-}
-#money-minus{
-    color: rgb(143, 23, 43);
-}
-.list{
-    list-style: none;
-    padding: 0px;
-    margin-bottom: 0px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.inc-exp > div{
+  flex: 1;
+  text-align: center;
 }
 .list li {
-    background-color: #fff;
-    color: #333;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
 }
-.btn-del{
-    background-color: rgb(190, 48, 48);
-    color: white;
-    
-    border-radius: 50px;
-    cursor: pointer;
-  border: 0;
-  font-size: 20px;
-  line-height: 20px;
-  padding: 2px 5px;
-  position: absolute;
-  top: 50%;
-  left: -2%;
-  transform: translate(-100%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+.delete-btn{
+  color: #fff;
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 1px;
 }
-.list li:hover .btn-del {
-    opacity: 1;
-  }
-.list li.plus {
-    border-right: 5px solid #2ecc71;
-  }
-  .list li.minus {
-    border-right: 5px solid red;
-  }
-  label {
-    display: inline-block;
-    margin: 10px 0;
-  }
-  input{
-    border: 1px solid #dedede;
-    border-radius: 2px;
-    display: block;
-    font-size: 16px;
-    padding: 10px;
-    width: 100%;
-  }
-  .btn {
-    cursor: pointer;
-    background-color: #646914;
-    box-shadow: var(--box-shadow);
-    color: #fff;
-    border: 0;
-    display: block;
-    font-size: 16px;
-    margin: 20px 0px 20px 10px;
-    padding: 10px;
-    width: 100%;
-  }
+.list li:hover .delete-btn{
+  display: block;
+}
+input[type='text'],
+input[type='number']
+{
+  border: 1px solid white;
+  border-radius: 2px;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+.btn{
+  width: 105%;
+  background-color: green;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid green;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
