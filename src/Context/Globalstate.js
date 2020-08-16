@@ -3,8 +3,8 @@ import AddReducer from './AddReducer'
 
 const initialstate = {
     transactions: [
-        {id: 1, text: 'books',amount: 230},
-        {id: 2, text: 'Bread',amount: -340}
+        
+
     ]
 }
 
@@ -18,11 +18,17 @@ export const Globalprovider = ({children}) => {
         dispatch({
             type: 'DELETE_ITEM',
             payload: id
-        })
-    }
+        }); }
+
+        function newtransaction(transaction) {
+            dispatch({
+                type: 'NEW_TRANSACTION',
+                payload: transaction
+            }); }
+    
     
     return(
-        <Globalcontext.Provider value={{transactions: state.transactions,deletetransaction}}>
+        <Globalcontext.Provider value={{transactions: state.transactions,deletetransaction,newtransaction}}>
                 {children}
         </Globalcontext.Provider>
     )
