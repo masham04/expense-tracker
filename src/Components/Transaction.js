@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Globalcontext } from '../Context/Globalstate'
 
 export const Transaction = ({el}) => {
-    const {transactions} = useContext(Globalcontext);
+    
     const {deletetransaction} = useContext(Globalcontext);
     return (
         <div>

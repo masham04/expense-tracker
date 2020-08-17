@@ -10,6 +10,7 @@ export default (state,action) => {
              return{
                  transactions: [action.payload,...state.transactions]
              }
+             break;
         default:
             break;
     }
