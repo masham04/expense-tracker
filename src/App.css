@@ -5,6 +5,7 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 .title{
   text-decoration: underline;
