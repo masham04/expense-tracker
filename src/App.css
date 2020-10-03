@@ -6,6 +6,9 @@ body{
   justify-content: center;
   min-height: 100vh;
 }
+.title{
+  text-decoration: underline;
+}
 .inc-exp{
   display: flex;
   justify-content: space-between;
