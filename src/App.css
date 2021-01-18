@@ -1,5 +1,5 @@
 body{
-  background: linear-gradient(to right,red,black);
+  background: linear-gradient(to right,#000428,#124979);
   color: white;
   display: flex;
   align-items: center;
@@ -34,6 +34,7 @@ body{
   background-color: red;
   border: 1px solid red;
   border-radius: 1px;
+  cursor: pointer;
 }
 .list li:hover .delete-btn{
   display: block;
