@@ -51,14 +51,17 @@ input[type='number']
 }
 .btn{
   width: 105%;
-  background-color: green;
+  background-color: #6cc51c;
   height: 40px;
   display: flex;
   justify-content: center;
-  border: 1px solid green;
+  border: 1px solid #6cc51c;
   color: white;
   font-size: 16px;
   padding: 10px;
   margin-bottom: 20px;
   cursor: pointer;
+}
+GlobalProvider{
+  min-height: 100vh;
 }

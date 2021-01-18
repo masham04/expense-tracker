@@ -11,13 +11,18 @@ import {Globalprovider} from './Context/Globalstate'
 function App() {
   
   return(
+    <main>
     <Globalprovider>
         <Header />
         <Balance />
         <IncomeExpence />
         <History />
         <AddTransaction />
+        
     </Globalprovider>
+    <p style={{textAlign:'center'}}>&copy;M.Masham 2020</p>
+    </main>
+    
   )
 }
 export default App;
