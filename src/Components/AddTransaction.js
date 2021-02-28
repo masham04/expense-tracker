@@ -4,7 +4,7 @@ import { Globalcontext } from '../Context/Globalstate'
 
 export const AddTransaction = () => {
     let [text,settext] = useState('');
-    let [amount,setamount] = useState(0);
+    let [amount,setamount] = useState();
     const {newtransaction} = useContext(Globalcontext);
     
 
@@ -16,6 +16,7 @@ export const AddTransaction = () => {
               amount: +amount
         }
             newtransaction(inputtransaction);
+            
      }
 
     return (

@@ -20,7 +20,7 @@ function App() {
         <AddTransaction />
         
     </Globalprovider>
-    <p style={{textAlign:'center'}}>&copy;M.Masham 2020</p>
+    <p style={{textAlign:'center',paddingTop: '50px'}}>&copy;M.Masham 2020</p>
     </main>
     
   )
